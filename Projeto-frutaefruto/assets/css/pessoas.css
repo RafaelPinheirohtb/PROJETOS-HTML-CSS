@@ -1,0 +1,18 @@
+.pessoas {
+    display: flex;
+    justify-content: space-around; /*Espaço entre todas as caixas*/
+    padding-top: 3rem; /*Espaçamento no topo(abaixo da descrição*/
+}
+
+@media screen and (min-width: 0) {
+    .pessoas {
+    flex-direction: column; /*Em telas menores uma abaixo da outra(column)*/
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .pessoas {
+        flex-direction: row; /*Em telas maiores, uma ao lado da outra(row)*/
+    }
+}
+
